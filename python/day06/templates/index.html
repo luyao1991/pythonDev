@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlaskDemo</title>
+</head>
+<body>
+    <h1 style="color:green">这里是首页</h1>
+    <h2 style="color:red"><i>这里是jinja2练习</i></h2>
+    <label>{{ user.name }}您好，您是第{{ user.index }}为访问本网站的用户！</label>
+    <input value="这是实际内容" placeholder="如果没有输入，就默认展示"/>
+    {% if user.first %}
+        <label>您是第一次访问！</label>
+    {% else %}
+        {% for visit in user.visit %}
+            <a href="{{ visit.url }}">{{ visit.title }}</a>
+        {% endfor %}
+    {% endif %}
+
+</body>
+</html>

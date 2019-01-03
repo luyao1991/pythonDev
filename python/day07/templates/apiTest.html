@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>接口测试平台</title>
+    <script language="JavaScript" src="/static/jquery-3.3.1.js"></script>
+    <script language="JavaScript" src="/static/apiTest.js"></script>
+</head>
+<body>
+<div>
+    <select id="method">
+        <option>GET</option>
+        <option>POST</option>
+        <option>PUT</option>
+        <option>DELETE</option>
+    </select>
+    <input id="url" type="url" placeholder="  请输入请求地址" value="http://127.0.0.1:8888/accept" />
+    <input id="header" type="button" value="header"/>
+    <input id="param" type="button" value="param"  />
+    <input id="assert" type="button" value="assert"/>
+</div>
+<div id="add_headers">
+    <label>请求头:</label>
+</div>
+<div id="add_params">
+    <label>请求参数:</label>
+</div>
+<input id="debug" type="button" value="debug"/>
+
+</body>
+</html>

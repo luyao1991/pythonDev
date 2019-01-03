@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+</head>
+<body>
+    {% for poker in player1 %}
+        <img src="/static/poker/{{ poker }}"/>
+    {% endfor %}
+    <br>
+    {% for poker in player2 %}
+        <img src="/static/poker/{{ poker }}"/>
+    {% endfor %}
+    <br>
+    <h1>{{ status }}</h1>
+</body>
+</html>
